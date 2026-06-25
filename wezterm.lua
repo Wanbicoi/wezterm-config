@@ -84,6 +84,10 @@ return {
 	-- 	},
 	-- },
 	colors = {
+		-- Text selection highlight
+		selection_fg = "#575279", -- Text (Dawn)
+		selection_bg = "#c4a7e7", -- Iris/lavender — clearly visible selection
+
 		tab_bar = {
 			background = "#faf4ed", -- Matches the primary dawn background
 
