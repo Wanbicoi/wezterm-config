@@ -53,6 +53,36 @@ return {
 			action = wezterm.action.CloseCurrentTab({ confirm = false }),
 		},
 	},
+
+	-- ─────────────────────────────────────────────
+	-- Launch menu (shown in the launcher / + button)
+	-- ─────────────────────────────────────────────
+	launch_menu = {
+		{
+			label = "PowerShell",
+			args = { "powershell.exe" },
+		},
+		{
+			label = "PowerShell 7 (pwsh)",
+			args = { "pwsh.exe" },
+		},
+		{
+			label = "Arch Linux (WSL)",
+			args = { "wsl.exe", "-d", "archlinux", "--cd", "~/" },
+		},
+	},
+
+	-- ─────────────────────────────────────────────
+	-- Mouse bindings
+	-- ─────────────────────────────────────────────
+	-- mouse_bindings = {
+	-- 	-- Middle-click on a tab to close without confirmation
+	-- 	{
+	-- 		event = { Down = { streak = 1, button = "Middle" } },
+	-- 		mods = "NONE",
+	-- 		action = wezterm.action.CloseCurrentTab({ confirm = false }),
+	-- 	},
+	-- },
 	colors = {
 		tab_bar = {
 			background = "#faf4ed", -- Matches the primary dawn background
@@ -98,8 +128,8 @@ return {
 		font_size = 10,
 
 		-- Active window title bar
-		active_titlebar_bg = "#f2e9e1",   -- Overlay (one step darker than Base)
-		active_titlebar_fg = "#575279",   -- Text
+		active_titlebar_bg = "#f2e9e1", -- Overlay (one step darker than Base)
+		active_titlebar_fg = "#575279", -- Text
 		active_titlebar_border_bottom = "#cec9c7", -- Darker separator
 
 		-- Inactive window title bar
@@ -110,6 +140,6 @@ return {
 		button_fg = "#575279",
 		button_bg = "#f2e9e1",
 		button_hover_fg = "#575279",
-		button_hover_bg = "#cec9c7",      -- Darker hover
+		button_hover_bg = "#cec9c7", -- Darker hover
 	},
 }
