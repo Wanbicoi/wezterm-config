@@ -10,9 +10,9 @@ return {
 	-- ─────────────────────────────────────────────
 	-- Font
 	-- ─────────────────────────────────────────────
-	font = wezterm.font("CaskaydiaCove Nerd Font Propo"),
-	-- font = wezterm.font("JetBrainsMono Nerd Font"),
-	font_size = 10,
+	-- font = wezterm.font("CaskaydiaCove Nerd Font Propo"),
+	font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" }),
+	font_size = 10.5,
 
 	-- ─────────────────────────────────────────────
 	-- Window: Dimensions & Padding
@@ -36,7 +36,6 @@ return {
 	-- Cursor
 	-- ─────────────────────────────────────────────
 	cursor_blink_rate = 0,
-
 	-- ─────────────────────────────────────────────
 	-- Tab / Window close behaviour
 	-- ─────────────────────────────────────────────
@@ -59,16 +58,12 @@ return {
 	-- ─────────────────────────────────────────────
 	launch_menu = {
 		{
-			label = "PowerShell",
-			args = { "powershell.exe" },
-		},
-		{
 			label = "PowerShell 7 (pwsh)",
 			args = { "pwsh.exe" },
 		},
 		{
-			label = "Arch Linux (WSL)",
-			args = { "wsl.exe", "-d", "archlinux", "--cd", "~/" },
+			label = "PowerShell",
+			args = { "powershell.exe" },
 		},
 	},
 
@@ -129,7 +124,7 @@ return {
 	window_frame = {
 		-- Font for the tab bar titles
 		font = wezterm.font("CaskaydiaCove Nerd Font Propo"),
-		font_size = 10,
+		font_size = 10.5,
 
 		-- Active window title bar
 		active_titlebar_bg = "#f2e9e1", -- Overlay (one step darker than Base)
