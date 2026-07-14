@@ -141,4 +141,7 @@ return {
 		button_hover_fg = "#575279",
 		button_hover_bg = "#cec9c7", -- Darker hover
 	},
+	inactive_pane_hsb = {
+		brightness = 1.0,
+	},
 }
